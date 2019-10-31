@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { InputUserDataComponent } from './input-user-data/input-user-data.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputUserDataComponent
   ],
   imports: [
     BrowserModule

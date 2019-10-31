@@ -1,0 +1,75 @@
+.input-user-data{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.input-user-data-heading{
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.input-user-data label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.input-user-data label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.input-user-data span.required{
+	color:red;
+}
+.input-user-data input.input-field, .input-user-data .select-field{
+	width: 48%;	
+}
+.input-user-data input.input-field, 
+.input-user-data .tel-number-field, 
+.input-user-data .textarea-field, 
+ .input-user-data .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.input-user-data .input-field:focus, 
+.input-user-data .tel-number-field:focus, 
+.input-user-data .textarea-field:focus,  
+.input-user-data .select-field:focus{
+	border: 1px solid #0C0;
+}
+.input-user-data .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.input-user-data input[type=submit],
+.input-user-data input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #FF8500;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.input-user-data input[type=submit]:hover,
+.input-user-data input[type=button]:hover{
+	background: #EA7B00;
+	color: #fff;
+}
