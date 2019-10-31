@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputUserDataComponent } from './input-user-data.component';
 
 describe('InputUserDataComponent', () => {
@@ -8,7 +8,8 @@ describe('InputUserDataComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InputUserDataComponent ]
+      declarations: [ InputUserDataComponent ],
+      imports: [FormsModule, ReactiveFormsModule]
     })
     .compileComponents();
   }));

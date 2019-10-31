@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule, ReactiveFormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-input-user-data',
@@ -11,5 +12,9 @@ export class InputUserDataComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  onSubmit(summaryForm: NgForm) {
+    console.log(summaryForm.value);
+  } 
 
 }
