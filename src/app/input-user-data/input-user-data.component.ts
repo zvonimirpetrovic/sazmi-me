@@ -14,7 +14,8 @@ export class InputUserDataComponent implements OnInit {
   }
 
   onSubmit(summaryForm: NgForm) {
-    console.log(summaryForm.value);
+    console.log(summaryForm.value.title);
+    console.log(summaryForm.value.content);
   } 
 
 }

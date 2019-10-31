@@ -38,3 +38,7 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+  .wide{
+      width:100%;
+      text-align: center;
+  }

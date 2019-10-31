@@ -1,5 +1,5 @@
 .input-user-data{
-	max-width: 500px;
+	max-width: 100%;
 	padding: 20px 12px 10px 20px;
 	font: 13px Arial, Helvetica, sans-serif;
 }
@@ -52,8 +52,8 @@
 	border: 1px solid #0C0;
 }
 .input-user-data .textarea-field{
-	height:100px;
-	width: 55%;
+	height:500px;
+	width: 100%;
 }
 .input-user-data input[type=submit],
 .input-user-data input[type=button]{
@@ -72,4 +72,7 @@
 .input-user-data input[type=button]:hover{
 	background: #EA7B00;
 	color: #fff;
+}
+.form-titles{
+    padding:20px 0 20px 0;
 }

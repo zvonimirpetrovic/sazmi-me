@@ -1,8 +1,8 @@
 <div class="input-user-data">
     <div class="input-user-data-heading">Unesi tekst za sažimanje</div>
         <form #summaryForm="ngForm" (ngSubmit)="onSubmit(summaryForm)" novalidate>
-            <span>Naslov <span class="required">*</span></span><input type="text" class="input-field" name="newTitle" ngModel="title" />
-            <span>Sadržaj <span class="required">*</span></span><textarea name="content" class="textarea-field" name="content" ngModel="content"></textarea>
+            <div class="form-titles"><span>Naslov<span class="required">*</span></span></div><input type="text" class="input-field" name="title" ngModel="title" />
+            <div class="form-titles"><span>Sadržaj<span class="required">*</span></span></div><textarea name="content" class="textarea-field" name="content" ngModel="content"></textarea>
             <input type="submit" value="Submit" />
         </form>
 </div>
