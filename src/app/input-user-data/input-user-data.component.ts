@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, NgForm } from '@angular/forms';
-import { ApiServiceService } from '../api-service.service';
+import { ApiServiceService } from '@service/api-service.service';
 
 @Component({
   selector: 'app-input-user-data',
@@ -15,9 +15,22 @@ export class InputUserDataComponent implements OnInit {
   }
 
   onSubmit(summaryForm: NgForm) {
-    console.log(summaryForm.value.title);
-    console.log(summaryForm.value.content);
-    this.apiService.postAPIData(summaryForm.value.title, summaryForm.value.content);
-  } 
+    // console.log(summaryForm.value.title);
+    // console.log(summaryForm.value.content);
+    let url = '/contact';
+    let body = {};
+    body['title'] = summaryForm.value.title;
+    body['content'] = summaryForm.value.content;
+
+    body['content'] = '"""' + body['content'] + '"""';
+    body['content'] = body['content'].replace(/\s/g,'');
+    this.apiService.post(body,url).subscribe((res) => {
+
+        console.log('RES:', res);
+        // this.spinnerModule.hide();
+      },(err) => {
+      }
+    );
+  }
 
 }

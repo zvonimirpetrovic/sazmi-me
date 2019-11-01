@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { InputUserDataComponent } from './input-user-data/input-user-data.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ApiServiceService } from './api-service.service';
+import { ApiServiceService } from '@service/api-service.service';
 
 @NgModule({
   declarations: [
