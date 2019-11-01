@@ -8,7 +8,16 @@ export class ApiServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getAPIData(){
-    return this.http.get('https://jsonplaceholder.typicode.com/users')
+  newTitle : String;
+  newContent : String;
+  newPost: any;
+
+  postAPIData( newTitle, newContent ){
+    this.http.post('http://localhost:3001/api/',{
+        title: this.newTitle,
+        content: this.newContent}).subscribe(response => {
+     console.log(response);
+      return this.newPost = response
+      });
   }
 }
