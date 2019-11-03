@@ -17,7 +17,25 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "baseUrl": "src",
+		"paths": {
+			"@app/*": ["app/*"],
+			"@env/*": ["environments/*"],
+			"@guard/*": ["app/guard/*"],
+			"@service/*": ["app/service/*"],
+			"@interface/*": ["app/interface/*"],
+			"@module/*": ["app/module/*"],
+			"@home/*": ["app/module/page/home/*"],
+			"@in-room/*": ["app/module/page/in-room/*"],
+			"@in-hotel/*": ["app/module/page/in-hotel/*"],
+			"@outside/*": ["app/module/page/outside/*"],
+			"@shared/*": ["app/module/shared/*"],
+			"@modal/*": ["app/module/shared/modal/*"],
+			"@class/*": ["app/class/*"],
+			"@interceptor/*": ["app/interceptor/*"],
+      "@assets/*": ["assets/*"]
+		},
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
