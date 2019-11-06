@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { InputUserDataComponent } from './input-user-data/input-user-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ApiServiceService } from '@service/api-service.service';
+import { OutputSummaryDataComponent } from './output-summary-data/output-summary-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputUserDataComponent
+    InputUserDataComponent,
+    OutputSummaryDataComponent
   ],
   imports: [
     BrowserModule,
