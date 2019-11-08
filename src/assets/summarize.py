@@ -1,5 +1,5 @@
+# -*- coding: utf-8 -*-
 
-# coding=UTF-8
 import re
 import sys
 import json
@@ -170,7 +170,6 @@ def main():
     print ("Original Length %s" % (len(title) + len(content)))
     print ("Summary Length %s" % len(summary))
     print ("Summary Ratio: %s" % (100 - (100 * (len(summary) / (len(title) + len(content))))))
-    print (my_list)
     sys.stdout.flush()
 
 if __name__ == '__main__':
