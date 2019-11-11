@@ -19,8 +19,8 @@ export class InputUserDataComponent implements OnInit {
 
     let url = '/contact';
     let body = {};
-    body['title'] = summaryForm.value.title;
-    body['content'] = summaryForm.value.content;
+    body['title'] = summaryForm.value.title.replace(/<\/?[^>]+(>|$)/g, "");
+    body['content'] = summaryForm.value.content.replace(/<\/?[^>]+(>|$)/g, "");
 
     this.apiService.post(body,url).subscribe((res) => {
       
